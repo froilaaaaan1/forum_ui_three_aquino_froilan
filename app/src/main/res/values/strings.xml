@@ -19,4 +19,18 @@
     <string name="contact_number">Contact No.:</string>
     <string name="email">Email:</string>
     <string name="dialect_known">Dialect Known:</string>
+    <string-array name="dialect_lists">
+        <item>English</item>
+        <item>Filipino</item>
+        <item>Cebuano</item>
+        <item>Ilocano</item>
+        <item>Tagalog</item>
+        <item>Spanish</item>
+        <item>Mandarin</item>
+        <item>Japanese</item>
+        <item>French</item>
+        <item>Italian</item>
+        <item>Chinese</item>
+        <item>Others</item>
+    </string-array>
 </resources>
