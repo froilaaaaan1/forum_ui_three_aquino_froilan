@@ -33,4 +33,8 @@
         <item>Chinese</item>
         <item>Others</item>
     </string-array>
+
+    <string name="interview_time">Short Call Interview Time: </string>
+    <string name="set_time">Set Interview Time</string>
+    <string name="submit">Submit</string>
 </resources>
