@@ -585,13 +585,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.61" />
 
-    <Button
+    <ImageButton
         android:id="@+id/submit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="@string/submit"
         android:paddingStart="40dp"
         android:paddingEnd="40dp"
-        android:text="@string/submit"
+        android:src="@drawable/baseline_check_circle_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.50"

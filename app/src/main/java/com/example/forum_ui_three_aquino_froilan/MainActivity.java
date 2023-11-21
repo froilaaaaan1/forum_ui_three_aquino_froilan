@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         final RadioGroup GENDER_GROUP = findViewById(R.id.genderGroup);
         final Spinner DIALECT_KNOWN = findViewById(R.id.dialectKnown);
         final Button SET_TIME = findViewById(R.id.setTime);
-        final Button SUBMIT = findViewById(R.id.submit);
+        final ImageButton SUBMIT = findViewById(R.id.submit);
 
         SET_TIME.setOnClickListener(new View.OnClickListener() {
             final Calendar calendarObject = Calendar.getInstance();
