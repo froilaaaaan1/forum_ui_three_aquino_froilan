@@ -50,9 +50,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 TimePickerDialog timePickerDialog = new TimePickerDialog(MainActivity.this, (view, hour, minute) -> {
-                    final String interviewTime = hour + " : " + minute;
+                    final String interviewTime;
+                    if (minute < 10) {
+                        interviewTime = hour + " : 0" + minute;
+                    } else {
+                        interviewTime = hour + " : " + minute;
+                    }
                     SET_TIME_TEXTVIEW.setText(interviewTime);
-                }, currentHour, currentMinute, true);
+
+                }, currentHour, currentMinute, false);
                 timePickerDialog.show();
 
             }
@@ -92,22 +98,22 @@ public class MainActivity extends AppCompatActivity {
             } else {
                 int radioID = GENDER_GROUP.getCheckedRadioButtonId();
 
-                intentObject.putExtra("firstName", FIRST_NAME.getText().toString());
-                intentObject.putExtra("middleInitial", MIDDLE_INITIAL.getText().toString());
-                intentObject.putExtra("lastName", LAST_NAME.getText().toString());
-                intentObject.putExtra("contactNumber", CONTACT_NUMBER.getText().toString());
-                intentObject.putExtra("street", STREET.getText().toString());
-                intentObject.putExtra("lotNumber", LOT_NUMBER.getText().toString());
-                intentObject.putExtra("houseNumber", HOUSE_NUMBER.getText().toString());
-                intentObject.putExtra("apartmentName", APARTMENT_NAME.getText().toString());
-                intentObject.putExtra("barangay", BARANGAY.getText().toString());
-                intentObject.putExtra("cityMunicipality", CITY_MUNICIPALITY.getText().toString());
-                intentObject.putExtra("blockNumber", BLOCK_NUMBER.getText().toString());
-                intentObject.putExtra("provinceState", PROVINCE_STATE.getText().toString());
-                intentObject.putExtra("email", EMAIL.getText().toString());
-                intentObject.putExtra("interviewTime", SET_TIME_TEXTVIEW.getText().toString());
-                intentObject.putExtra("gender", ((RadioButton) findViewById(radioID)).getText().toString());
-                intentObject.putExtra("dialectKnown", DIALECT_KNOWN.getSelectedItem().toString());
+                intentObject.putExtra("firstName", "First Name: " + FIRST_NAME.getText().toString());
+                intentObject.putExtra("middleInitial", "Middle Initial: " + MIDDLE_INITIAL.getText().toString());
+                intentObject.putExtra("lastName", "Last Name: " + LAST_NAME.getText().toString());
+                intentObject.putExtra("contactNumber", "Contact Number: " + CONTACT_NUMBER.getText().toString());
+                intentObject.putExtra("street", "Street: " + STREET.getText().toString());
+                intentObject.putExtra("lotNumber", "Lot Number: " + LOT_NUMBER.getText().toString());
+                intentObject.putExtra("houseNumber", "House Number: " + HOUSE_NUMBER.getText().toString());
+                intentObject.putExtra("apartmentName", "Apartment Name: " + APARTMENT_NAME.getText().toString());
+                intentObject.putExtra("barangay", "Barangay: " + BARANGAY.getText().toString());
+                intentObject.putExtra("cityMunicipality", "City/Municipality: " + CITY_MUNICIPALITY.getText().toString());
+                intentObject.putExtra("blockNumber", "Block Number: " + BLOCK_NUMBER.getText().toString());
+                intentObject.putExtra("provinceState", "Province/State: " + PROVINCE_STATE.getText().toString());
+                intentObject.putExtra("email", "Email: " + EMAIL.getText().toString());
+                intentObject.putExtra("interviewTime", "Interview Time: " + SET_TIME_TEXTVIEW.getText().toString());
+                intentObject.putExtra("gender", "Gender: " + ((RadioButton) findViewById(radioID)).getText().toString());
+                intentObject.putExtra("dialectKnown", "Dialect Known: " + DIALECT_KNOWN.getSelectedItem().toString());
                 startActivity(intentObject);
             }
         });
