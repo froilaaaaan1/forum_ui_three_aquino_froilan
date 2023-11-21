@@ -1,10 +1,22 @@
 <resources>
     <string name="app_name">forum_ui_three_aquino_froilan</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
-    <string name="middle_initial">M.I</string>
+    <string name="first_name">First Name:</string>
+    <string name="last_name">Last Name:</string>
+    <string name="middle_initial">M.I:</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="non_binary">Non Binary</string>
 
-    <string name="apartment_name">Apartment Name</string>
+    <string name="apartment_name">Apartment Name:</string>
+    <string name="house_no">House No.:</string>
+    <string name="block_no">Block No.:</string>
+    <string name="lot_no">Lot No.:</string>
+    <string name="street">Street:</string>
+    <string name="barangay">Brgy.:</string>
+    <string name="city_municipality">City/Municipality:</string>
+    <string name="province_state">Province/State:</string>
 
-    <string name="house_no">House No.</string>
+    <string name="contact_number">Contact No.:</string>
+    <string name="email">Email:</string>
+    <string name="dialect_known">Dialect Known:</string>
 </resources>
