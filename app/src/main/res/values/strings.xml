@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">forum_ui_three_aquino_froilan</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="middle_initial">M.I</string>
+
+    <string name="apartment_name">Apartment Name</string>
+
+    <string name="house_no">House No.</string>
+</resources>
